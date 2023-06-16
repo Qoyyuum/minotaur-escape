@@ -31,8 +31,8 @@ public class Controller : MonoBehaviour
 
     [Header("Control Settings")]
     public float MouseSensitivity = 100.0f;
-    public float PlayerSpeed = 5.0f;
-    public float RunningSpeed = 7.0f;
+    public float PlayerSpeed = 25.0f;
+    public float RunningSpeed = 25.0f;
     public float JumpSpeed = 5.0f;
 
     [Header("Audio")]
