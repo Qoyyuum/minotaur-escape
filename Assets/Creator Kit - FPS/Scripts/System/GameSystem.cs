@@ -180,6 +180,12 @@ public class GameSystem : MonoBehaviour
             m_Timer += Time.deltaTime;
             
             GameSystemInfo.Instance.UpdateTimer(m_Timer);
+
+            if (m_Timer >= 10)
+            {
+                GameSystem.Instance.StopTimer();
+                GameSystem.Instance.FinishRun();
+            }
         }
 
         Transform playerTransform = Controller.Instance.transform;
