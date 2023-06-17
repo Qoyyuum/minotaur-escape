@@ -37,13 +37,13 @@ MonoBehaviour:
     value: 0
   intensity:
     overrideState: 1
-    value: 1.6
+    value: 0.2
   color:
     overrideState: 1
-    value: {r: 0.16981131, g: 0, b: 0.026375527, a: 1}
+    value: {r: 0.26415092, g: 0.22776787, b: 0.22776787, a: 1}
   ambientOnly:
     overrideState: 1
-    value: 1
+    value: 0
   noiseFilterTolerance:
     overrideState: 1
     value: 0
@@ -86,13 +86,13 @@ MonoBehaviour:
     value: 0
   color:
     overrideState: 1
-    value: {r: 0.38679248, g: 0.027367389, b: 0.027367389, a: 1}
+    value: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
   center:
     overrideState: 1
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.286
+    value: 0.15
   smoothness:
     overrideState: 1
     value: 0.429
@@ -127,13 +127,13 @@ MonoBehaviour:
     value: 1
   focusDistance:
     overrideState: 1
-    value: 2.91
+    value: 1.15
   aperture:
     overrideState: 1
     value: 5.6
   focalLength:
     overrideState: 1
-    value: 50
+    value: 40
   kernelSize:
     overrideState: 1
-    value: 1
+    value: 0
