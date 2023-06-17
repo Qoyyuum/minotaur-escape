@@ -82,7 +82,7 @@ public class GameSystem : MonoBehaviour
 
     public void ResetTimer()
     {
-        m_Timer = 0.0f;
+        m_Timer = 10.0f;
     }
     
     public void StartTimer()
