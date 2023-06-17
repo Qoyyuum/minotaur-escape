@@ -94,6 +94,10 @@ public class GameSystem : MonoBehaviour
     {
         m_TimerRunning = false;
     }
+    public void AddTimer(float seconds)
+    {
+        m_Timer = m_Timer + seconds;
+    }
 
     public void FinishRun()
     {
