@@ -25,7 +25,7 @@ public class GameSystem : MonoBehaviour
     public int DestroyedTarget => m_TargetDestroyed;
     public int Score => m_Score;
 
-    float m_Timer;
+    float m_Timer = 10.0f;
     bool m_TimerRunning = false;
     
     int m_TargetCount;
@@ -77,12 +77,12 @@ public class GameSystem : MonoBehaviour
         }
 #endif
         
-        GameSystemInfo.Instance.UpdateTimer(0);
+        GameSystemInfo.Instance.UpdateTimer(10.0f);
     }
 
     public void ResetTimer()
     {
-        m_Timer = 0.0f;
+        m_Timer = 10.0f;
     }
     
     public void StartTimer()
@@ -93,6 +93,10 @@ public class GameSystem : MonoBehaviour
     public void StopTimer()
     {
         m_TimerRunning = false;
+    }
+    public void AddTimer(float seconds)
+    {
+        m_Timer = m_Timer + seconds;
     }
 
     public void FinishRun()
@@ -177,11 +181,11 @@ public class GameSystem : MonoBehaviour
     {
         if (m_TimerRunning)
         {
-            m_Timer += Time.deltaTime;
+            m_Timer -= Time.deltaTime;
             
             GameSystemInfo.Instance.UpdateTimer(m_Timer);
 
-            if (m_Timer >= 10)
+            if (m_Timer <= 0)
             {
                 GameSystem.Instance.StopTimer();
                 GameSystem.Instance.FinishRun();
