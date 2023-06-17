@@ -185,7 +185,7 @@ public class GameSystem : MonoBehaviour
             
             GameSystemInfo.Instance.UpdateTimer(m_Timer);
 
-            if (m_Timer >= 10)
+            if (m_Timer <= 0)
             {
                 GameSystem.Instance.StopTimer();
                 GameSystem.Instance.FinishRun();
